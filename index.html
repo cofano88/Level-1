@@ -4,32 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/all.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet/less" type="text/css" href="assets/less/main.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
     <title>Level-1</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header">
-          <a class="logo-link" href="index.html">
-            <img src="assets/img/logo.png" alt="" class="logo" />
+          <a class="header__logo" href="index.html">
+            <img src="assets/img/logo.png" alt="" />
           </a>
-          <nav>
-            <a class="navs" href="#features">features</a>
-            <a class="navs" href="#works">works</a>
-            <a class="navs" href="#team">our team</a>
-            <a class="navs" href="#clients">testimonials</a>
-            <a class="navs" href="#download">download</a>
+          <nav class="header__nav">
+            <div class="header__nav-wrap">
+              <a href="#features">features</a>
+              <a href="#works">works</a>
+              <a href="#team">our team</a>
+              <a href="#clients">testimonials</a>
+              <a href="#download">download</a>
+            </div>
           </nav>
         </div>
 
-        <main>
-          <h1 class="main-title">
+        <main class="main">
+          <h1 class="main__title">
             Your Favorite One Page Multi Purpose Template
           </h1>
-          <div class="main-content">
+          <div class="main__content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             corporis doloribus nobis necessitatibus expedita quam quaerat beatae
             molestias est deserunt eaque aliquam cupiditate, praesentium quidem.
@@ -42,71 +43,83 @@
     <a name="features"></a>
     <section class="features">
       <div class="container">
-        <div class="features-items">
-          <div class="features-item">
-            <div class="item-icon">
-              <i class="fas fa-pencil-ruler"></i>
-            </div>
-            <h3 class="item-title">Easily Customised</h3>
-            <div class="item-content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo minus cumque at quod commodi adipisci totam dolorum
-              mollitia soluta quo, modi delectus ullam.
-            </div>
-          </div>
-          <div class="features-item">
-            <div class="item-icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <h3 class="item-title">Responsive Ready</h3>
-            <div class="item-content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo minus cumque at quod commodi adipisci totam dolorum
-              mollitia soluta quo, modi delectus ullam.
+        <div class="features__items">
+          <div class="features__item">
+            <div class="features__item-wrap">
+              <div class="features__icon">
+                <i class="fas fa-pencil-ruler"></i>
+              </div>
+              <h3 class="features__title">Easily Customised</h3>
+              <div class="features__content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Explicabo minus cumque at quod commodi adipisci totam dolorum
+                mollitia soluta quo, modi delectus ullam.
+              </div>
             </div>
           </div>
-          <div class="features-item">
-            <div class="item-icon">
-              <i class="far fa-lightbulb"></i>
-            </div>
-            <h3 class="item-title">Modern Design</h3>
-            <div class="item-content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo minus cumque at quod commodi adipisci totam dolorum
-              mollitia soluta quo, modi delectus ullam.
-            </div>
-          </div>
-          <div class="features-item">
-            <div class="item-icon">
-              <i class="fas fa-atom"></i>
-            </div>
-            <h3 class="item-title">Clean Code</h3>
-            <div class="item-content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo minus cumque at quod commodi adipisci totam dolorum
-              mollitia soluta quo, modi delectus ullam.
+          <div class="features__item">
+            <div class="features__item-wrap">
+              <div class="features__icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+              <h3 class="features__title">Responsive Ready</h3>
+              <div class="features__content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Explicabo minus cumque at quod commodi adipisci totam dolorum
+                mollitia soluta quo, modi delectus ullam.
+              </div>
             </div>
           </div>
-          <div class="features-item">
-            <div class="item-icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <h3 class="item-title">Ready to Ship</h3>
-            <div class="item-content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo minus cumque at quod commodi adipisci totam dolorum
-              mollitia soluta quo, modi delectus ullam.
+          <div class="features__item">
+            <div class="features__item-wrap">
+              <div class="features__icon">
+                <i class="far fa-lightbulb"></i>
+              </div>
+              <h3 class="features__title">Modern Design</h3>
+              <div class="features__content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Explicabo minus cumque at quod commodi adipisci totam dolorum
+                mollitia soluta quo, modi delectus ullam.
+              </div>
             </div>
           </div>
-          <div class="features-item">
-            <div class="item-icon">
-              <i class="fas fa-cloud-download-alt"></i>
+          <div class="features__item">
+            <div class="features__item-wrap">
+              <div class="features__icon">
+                <i class="fas fa-atom"></i>
+              </div>
+              <h3 class="features__title">Clean Code</h3>
+              <div class="features__content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Explicabo minus cumque at quod commodi adipisci totam dolorum
+                mollitia soluta quo, modi delectus ullam.
+              </div>
             </div>
-            <h3 class="item-title">Download for Free</h3>
-            <div class="item-content">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Explicabo minus cumque at quod commodi adipisci totam dolorum
-              mollitia soluta quo, modi delectus ullam.
+          </div>
+          <div class="features__item">
+            <div class="features__item-wrap">
+              <div class="features__icon">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3 class="features__title">Ready to Ship</h3>
+              <div class="features__content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Explicabo minus cumque at quod commodi adipisci totam dolorum
+                mollitia soluta quo, modi delectus ullam.
+              </div>
+            </div>
+          </div>
+          <div class="features__item">
+            <div class="features__item-wrap">
+              <div class="features__icon">
+                <i class="fas fa-cloud-download-alt"></i>
+              </div>
+              <h3 class="features__title">Download for Free</h3>
+              <div class="features__content">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Explicabo minus cumque at quod commodi adipisci totam dolorum
+                mollitia soluta quo, modi delectus ullam.
+              </div>
             </div>
           </div>
         </div>
@@ -115,94 +128,154 @@
 
     <a name="works"></a>
     <section class="works">
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works1.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works2.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works3.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works4.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works5.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works6.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works7.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
-      <div class="works-item">
+      <div class="works__item">
         <img src="assets/img/works8.jpg" alt="" />
+        <div class="works__item-inner">
+          <div>
+            <h3>Project Name</h3>
+            <p>User Interface Design</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <a name="team"></a>
     <section class="team">
       <div class="container">
-        <div class="team-items">
-          <div class="team-item">
-            <div class="item-ava">
+        <div class="team__items">
+          <div class="team__item">
+            <div class="item__ava">
               <img src="assets/img/ava1.jpg" alt="" />
             </div>
-            <div class="item-name">Ruth Woods</div>
-            <div class="item-position">Founder, CEO</div>
-            <div class="item-about">
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen
+            <div class="item__name">Ruth Woods</div>
+            <div class="item__position">Founder, CEO</div>
+            <div class="item__about">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam
+              eget risus varius blandit sit amet non magna. Nullam quis risus
+              eget urna mollis ornare vel eu leo.
             </div>
-            <div class="item-socials">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
+            <div class="item__socials">
+              <i class="fab fa-facebook-f ico"></i>
+              <i class="fab fa-twitter ico"></i>
+              <i class="fab fa-linkedin ico"></i>
             </div>
           </div>
-          <div class="team-item">
-            <div class="item-ava">
+          <div class="team__item">
+            <div class="item__ava">
               <img src="assets/img/ava2.jpg" alt="" />
             </div>
-            <div class="item-name">Timothy Reed</div>
-            <div class="item-position">Co-Founder, Developer</div>
-            <div class="item-about">
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen
+            <div class="item__name">Timothy Reed</div>
+            <div class="item__position">Co-Founder, Developer</div>
+            <div class="item__about">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam
+              eget risus varius blandit sit amet non magna. Nullam quis risus
+              eget urna mollis ornare vel eu leo.
             </div>
-            <div class="item-socials">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
+            <div class="item__socials">
+              <i class="fab fa-facebook-f ico"></i>
+              <i class="fab fa-twitter ico"></i>
+              <i class="fab fa-linkedin ico"></i>
             </div>
           </div>
-          <div class="team-item">
-            <div class="item-ava">
+          <div class="team__item">
+            <div class="item__ava">
               <img src="assets/img/ava3.jpg" alt="" />
             </div>
-            <div class="item-name">Victoria Valdez</div>
-            <div class="item-position">UI Designer</div>
-            <div class="item-about">
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen
+            <div class="item__name">Victoria Valdez</div>
+            <div class="item__position">UI Designer</div>
+            <div class="item__about">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam
+              eget risus varius blandit sit amet non magna. Nullam quis risus
+              eget urna mollis ornare vel eu leo.
             </div>
-            <div class="item-socials">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
+            <div class="item__socials">
+              <i class="fab fa-facebook-f ico"></i>
+              <i class="fab fa-twitter ico"></i>
+              <i class="fab fa-linkedin ico"></i>
             </div>
           </div>
-          <div class="team-item">
-            <div class="item-ava">
+          <div class="team__item">
+            <div class="item__ava">
               <img src="assets/img/ava4.jpg" alt="" />
             </div>
-            <div class="item-name">Beverly Little</div>
-            <div class="item-position">Data Scientist</div>
-            <div class="item-about">
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen
+            <div class="item__name">Beverly Little</div>
+            <div class="item__position">Data Scientist</div>
+            <div class="item__about">
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam
+              eget risus varius blandit sit amet non magna. Nullam quis risus
+              eget urna mollis ornare vel eu leo.
             </div>
-            <div class="item-socials">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-linkedin"></i>
+            <div class="item__socials">
+              <i class="fab fa-facebook-f ico"></i>
+              <i class="fab fa-twitter ico"></i>
+              <i class="fab fa-linkedin ico"></i>
             </div>
           </div>
         </div>
@@ -210,11 +283,81 @@
     </section>
 
     <a name="clients"></a>
-    <section class="clients"></section>
+    <section class="clients">
+      <div class="clients__photo">
+        <img src="assets/img/client.jpg" alt="" />
+      </div>
+      <div class="clients__review">
+        <p class="clients__content">
+          “Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+          Donec sed odio dui. Aenean eu leo quam...”
+        </p>
+        <h3 class="clients__subtitle">
+          Susan Sims, Interaction Designer at XYZ
+        </h3>
+        <div class="clients__slider">
+          <div class="clients__slider-wrap">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <a name="download"></a>
-    <section class="download"></section>
+    <section class="download">
+      <div class="container">
+        <div class="download__inner">
+          <h2 class="download__title">
+            Are You Ready to Start? Download Now For Free!
+          </h2>
+          <h3 class="download__subtitle">
+            Fusce dapibus, tellus ac cursus commodo
+          </h3>
+          <button class="download__button button">download here</button>
+        </div>
+      </div>
+    </section>
 
-    <footer></footer>
+    <footer>
+      <div class="container">
+        <div class="footer__contact-wrap">
+          <div class="footer__contact">
+            <div class="footer__location">
+              <h3 class="footer__subtitle">Location</h3>
+              <p class="footer__content">
+                3481 Melrose Place Beverly Hills, CA 90210
+              </p>
+            </div>
+            <div class="footer__social">
+              <h3 class="footer__subtitle">Share with Love</h3>
+              <div class="footer__socials">
+                <div>
+                  <i class="fab fa-facebook-f ico"></i>
+                  <i class="fab fa-twitter ico"></i>
+                  <i class="fab fa-linkedin ico"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer__about">
+              <h3 class="footer__subtitle">About ActiveBox</h3>
+              <p class="footer__content">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Donec ullamcorper nulla non metus auctor fringilla.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p>
+            Copyright © 2015 ActiveBox. All Rights Reserved <br />
+            Made with <span class="red">Y</span> <span class="white">by Kamal Chaneman</span>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
